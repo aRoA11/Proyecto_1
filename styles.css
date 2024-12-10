@@ -30,7 +30,7 @@ header {
   background-color: var(--secondary);
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 nav {
   width: 100%;
@@ -49,20 +49,20 @@ h1 {
 .nav-ul {
   margin-right: 30px;
   display: flex;
+  max-width: 100%;
   height: 100%;
   justify-content: space-evenly;
   align-items: center;
   font-size: 15px;
+  gap: 20px;
 }
 .logo {
   width: 140px;
   height: 130px;
 }
 .buttom-header {
-  margin-left: 20px;
-  margin-right: -90px;
-  font-size: 18px;
-  width: 135px;
+  font-size: 14px;
+  width: 95px;
   height: 35px;
   border-radius: 5px;
   border: none;
@@ -71,24 +71,16 @@ h1 {
 }
 main {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 0;
-  grid-template-rows: 2.5% 97.5%;
 }
 .tarjetas {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  width: 98%;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .Gatos {
-  width: 350px;
+  max-width: 100%;
+  width: 300px;
   padding: 20px 20px;
   border-radius: 10px;
   box-shadow: 18px 17px 39px -36px var(--stroke);
@@ -122,15 +114,65 @@ h4 {
 }
 footer {
   width: 100%;
-  height: 200px;
-  margin-top: 50px;
+  padding: 40px 20px;
+  height: auto;
+  margin-top: 30px;
   background-color: var(--secondary);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 ul li.first-child {
   font-weight: bold;
+}
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+@media (max-width: 996px) {
+  nav {
+    display: none;
+  }
+  header {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    margin-right: 40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 430px) {
+  .logo {
+    width: 90px;
+    height: 80px;
+  }
+  .menu-icon {
+    margin-right: 40px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  h1 {
+    margin-left: 20px;
+    width: 100%;
+    color: var(--headline);
+    font-family: 'Old Standard TT', serif;
+    font-size: 22px;
+    align-self: center;
+  }
 }
