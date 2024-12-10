@@ -155,6 +155,13 @@ ul li.first-child {
     cursor: pointer;
   }
 }
+@media (max-width: 694px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
 @media (max-width: 430px) {
   .logo {
     width: 90px;
