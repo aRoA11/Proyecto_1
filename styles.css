@@ -106,11 +106,12 @@ h4 {
 }
 .adopt-buttom {
   font-size: 18px;
-  width: 300px;
+  width: 200px;
   height: 40px;
   border: none;
   background-color: var(--tertiary);
   border-radius: 8px;
+  cursor: pointer;
 }
 footer {
   width: 100%;
